@@ -3,7 +3,7 @@ def solution(fuel, pos):
     state = collections.defaultdict(int)
     for i in range(len(pos)):
         state[(i, True)] = fuel[i] # left position, 0/1 which end left/right we are at, value fuel in the tank
-        width = -1
+    width = -1
     while len(state):
         newState = collections.defaultdict(int)
         width += 1
